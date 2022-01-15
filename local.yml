@@ -6,6 +6,6 @@
   tasks:
   - name: Install packages
     apt:
-      name: htop state=latest
+      name: htop state=absent
 
 #foo
