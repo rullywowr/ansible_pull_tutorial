@@ -3,10 +3,11 @@
   become: true
 
 
-  tasks:
-  - name: Install packages
+  pre_tasks:
+  - name: update repositories
     apt:
-      name:
-        - htop
-        - mc
-        - tmux
+      update_cache:
+    changed_when: False
+
+  tasks:
+    -  tasks/packages.yml
