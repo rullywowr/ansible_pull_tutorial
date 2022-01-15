@@ -6,10 +6,6 @@
   tasks:
   - name: Install packages
     apt:
-      name: 
-        - htop
-        - mc
-        - cmatrix
-        - tmux
-        - atop
+      name: htop state:latest
+
 #foo
